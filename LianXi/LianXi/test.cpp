@@ -1,129 +1,117 @@
-#include <iostream>
-using namespace std;
-
-/*
-输入：t行数据 每行数据输入6个整数 代表两个时间
-输出：t行数据 每行数据是两个时间之和 按60进位
-*/
-
+#include "MemoryPool.h"
+#include "SimpleSharedPtr.h"
+#include <algorithm>
+#include <vector>
+#include <functional>
 /*
 int main()
 {
-	int t;
-	int ah, am, as;
-	int bh, bm, bs;
-	cin >> t;
-	while (t--)
+	MemoryPool pool(sizeof(Student), 2);
+	auto mem1 = pool.allocate();
+	auto stu1 = new(mem1) Student("Tom", 20);
+	std::cout << stu1->_name << std::endl;
+
+	SimpleSharedPtr<Student> stu2(new Student("Jenny", 20));
+	std::cout << stu2->_name << std::endl;
+	SimpleSharedPtr<Student> stu3(stu2);
+	std::cout << stu3->_name << std::endl;
+	SimpleSharedPtr<Student> stu4(new Student("Jack", 40));
+	stu3 = stu4;
+	std::cout << stu3->_name << std::endl;
+	SimpleSharedPtr<Student> stu5 = std::move(stu3);
+	std::cout << stu5->_name << std::endl;
+	std::cout << stu5.getCount()<< std::endl;
+	std::cout << stu2.getCount() << std::endl;
+
+
+	int threshold = 5;
+	std::vector<int> vec = { 2,4,6,20,30,9,5 };
+	auto removeObj = std::remove_if(vec.begin(), vec.end(), [threshold](int x) -> bool
+		{
+			return x <= threshold;
+		});
+	vec.erase(removeObj, vec.end());
+	
+	std::cout << std::endl;
+	for (auto &  it : vec)
 	{
-		cin >> ah >> am >> as;
-		cin >> bh >> bm >> bs;
-
-		as += bs;
-		am += bm;
-		ah += bh;
-
-		// 按60进位 并且加给am
-		am += as / 60;
-		// 进位后 处理as
-		as %= 60;
-
-		ah += am / 60;
-		am %= 60;
-
-		cout << ah << ' ' << am << ' ' << as  << endl;
-
+		std::cout << it << " ";
 	}
+	std::function<int(int, int)> func1 = [](int a, int b) {
+		return a - b;
+		};
+	std::cout <<  func1(20, 10)  << std::endl;
+
 	return 0;
 }
 */
 
 /*
+#include "Complex.h"
 int main()
 {
-	int n,ret;
-	int sum = 0;
-	// 只要cin 不是非法输入就可以一直循环
-	while (cin >> n && n)
-	{
-		for (int i = 0; i < n; ++i)
-		{
-			cin >> ret;
-			sum += ret;
-		}
-		cout << sum;
-	}
+	Complex com(2.2,3.3);
+	Complex com2(1.8, 4.4);
+	com = com - com2;
+	std::cout << com << std::endl;
 	return 0;
 }
 */
 
 /*
-定义：f(A)=1,f(a)=-1,f(B)=2,f(b)=-2......f(Z)=26,f(z)=-26
-输入：输入一个t代表t组数据 每组数据一个字符x和整数y
-输出：每组数据输入f(x)+y的值
-*/
-
-/*
+#include "List.h"
 int main()
 {
-	int n;
-	cin >> n;
-	while (n--)
-	{
-		char str[3];
-		int y;
-		char x;
-		int ans = 0;
-		cin >> str;
-		cin >> y;
-		x = str[0];
-		if (x >= 'A' && x <= 'Z')
-		{
-			ans = y + (x - 'A' + 1);
-		}
-		else if (x >= 'a' && x <= 'z')
-		{
-			ans = y - (x - 'a' + 1);
-		}
-		else
-		{
+	List<int> myList;
+	myList.push_back(10);   // 尾插
+	myList.push_front(20);  // 头插
 
-		}
-		cout << ans << endl;
+	auto listIter = myList.begin();
+	listIter++;
+	myList.insert(listIter, 30);  // 迭代器插入
+	for (auto& it : myList)
+	{
+		std::cout << it << std::endl;
+	}
+
+	myList.push_back(40);
+	myList.push_back(50);
+	myList.remove(40);  // 删除元素
+	myList.pop_back();  // 删除尾元素
+	myList.erase(myList.begin());  // 迭代器删除
+	for (auto& it : myList)
+	{
+		std::cout << it << std::endl;
 	}
 	return 0;
 }
 */
 
+
+#include "practice.h"
 int main()
 {
-	int n, m;
-	while (cin >> n >> m)
+	try
 	{
-		cout << '+';
-		for (int i = 0; i < n; ++i)
-		{
-			cout << '-';
-		}
-		cout << '+' << endl;
-
-		for (int i = 0; i < m; ++i)
-		{
-			cout << '|';
-			for (int j = 0; j < n; ++j)
-			{
-				cout << ' ';
-			}
-			cout << '|' << endl;
-		}
-
-
-
-		cout << '+';
-		for (int i = 0; i < n; ++i)
-		{
-			cout << '-';
-		}
-		cout << '+' << endl;
+		memoryNew memory(sizeof(int), 20);
+		void* mem1 = memory.allocate();
+		auto student = new(mem1) int(20);
+		std::cout << *student << std::endl;
+		memory.deallcate(student);
 	}
+	catch (const std::bad_alloc & e)
+	{
+		std::cout << "Memory alloction error:" << e.what() << std::endl;
+		return 1;
+	}
+	
+	auto single1 = SingleNet::GetInst();
+	auto single2 = SingleNet::GetInst();
+	std::cout << single1 << std::endl;
+	std::cout << single2 << std::endl;
+
+
+
+
 	return 0;
 }

@@ -127,7 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Complex.cpp" />
+    <ClCompile Include="MemoryPool.cpp" />
+    <ClCompile Include="practice.h" />
+    <ClCompile Include="Student.cpp" />
     <ClCompile Include="test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Complex.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="MemoryPool.h" />
+    <ClInclude Include="SimpleSharedPtr.h" />
+    <ClInclude Include="Student.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

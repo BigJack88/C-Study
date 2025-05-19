@@ -1,0 +1,112 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C\u002B\u002B\u5B66\u4E60\\LianXi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BB4E8E6C-BFF6-4232-9A95-995FBE88A284}|LianXi\\LianXi.vcxproj|D:\\C\u002B\u002B\u5B66\u4E60\\LianXi\\LianXi\\MemoryPool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BB4E8E6C-BFF6-4232-9A95-995FBE88A284}|LianXi\\LianXi.vcxproj|solutionrelative:LianXi\\MemoryPool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB4E8E6C-BFF6-4232-9A95-995FBE88A284}|LianXi\\LianXi.vcxproj|D:\\C\u002B\u002B\u5B66\u4E60\\LianXi\\LianXi\\MemoryPool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BB4E8E6C-BFF6-4232-9A95-995FBE88A284}|LianXi\\LianXi.vcxproj|solutionrelative:LianXi\\MemoryPool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB4E8E6C-BFF6-4232-9A95-995FBE88A284}|LianXi\\LianXi.vcxproj|D:\\C\u002B\u002B\u5B66\u4E60\\LianXi\\LianXi\\practice.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BB4E8E6C-BFF6-4232-9A95-995FBE88A284}|LianXi\\LianXi.vcxproj|solutionrelative:LianXi\\practice.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB4E8E6C-BFF6-4232-9A95-995FBE88A284}|LianXi\\LianXi.vcxproj|D:\\C\u002B\u002B\u5B66\u4E60\\LianXi\\LianXi\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BB4E8E6C-BFF6-4232-9A95-995FBE88A284}|LianXi\\LianXi.vcxproj|solutionrelative:LianXi\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MemoryPool.cpp",
+              "DocumentMoniker": "D:\\C\u002B\u002B\u5B66\u4E60\\LianXi\\LianXi\\MemoryPool.cpp",
+              "RelativeDocumentMoniker": "LianXi\\MemoryPool.cpp",
+              "ToolTip": "D:\\C\u002B\u002B\u5B66\u4E60\\LianXi\\LianXi\\MemoryPool.cpp",
+              "RelativeToolTip": "LianXi\\MemoryPool.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-06T12:43:33.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MemoryPool.h",
+              "DocumentMoniker": "D:\\C\u002B\u002B\u5B66\u4E60\\LianXi\\LianXi\\MemoryPool.h",
+              "RelativeDocumentMoniker": "LianXi\\MemoryPool.h",
+              "ToolTip": "D:\\C\u002B\u002B\u5B66\u4E60\\LianXi\\LianXi\\MemoryPool.h",
+              "RelativeToolTip": "LianXi\\MemoryPool.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-06T12:31:49.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "practice.h",
+              "DocumentMoniker": "D:\\C\u002B\u002B\u5B66\u4E60\\LianXi\\LianXi\\practice.h",
+              "RelativeDocumentMoniker": "LianXi\\practice.h",
+              "ToolTip": "D:\\C\u002B\u002B\u5B66\u4E60\\LianXi\\LianXi\\practice.h",
+              "RelativeToolTip": "LianXi\\practice.h",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAACwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-06T12:28:42.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "test.cpp",
+              "DocumentMoniker": "D:\\C\u002B\u002B\u5B66\u4E60\\LianXi\\LianXi\\test.cpp",
+              "RelativeDocumentMoniker": "LianXi\\test.cpp",
+              "ToolTip": "D:\\C\u002B\u002B\u5B66\u4E60\\LianXi\\LianXi\\test.cpp",
+              "RelativeToolTip": "LianXi\\test.cpp",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAmwG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-08T10:31:53.62Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
